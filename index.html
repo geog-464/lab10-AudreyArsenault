@@ -3,31 +3,48 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width">
-        <title>lab9</title>
-        
-		<!--put your external stylesheet links here-->
-		<link rel="stylesheet" href="css/styles.css">
-		<!-- link to leaflet styles -->
-		<link rel="stylesheet" type="text/css" href="lib/leaflet/leaflet.css" />
-		<!-- link to leaflet scripts -->
-		<script type="text/javascript" src="lib/leaflet/leaflet.js"></script>
+        <title>lab10</title>
+
+          		<!--put your external stylesheet links here-->
+          		<link rel="stylesheet" href="css/styles.css">
+          		<!-- link to leaflet styles -->
+          		<link rel="stylesheet" type="text/css" href="lib/leaflet/leaflet.css" />
+          		<!-- link to leaflet scripts -->
+          		<script type="text/javascript" src="lib/leaflet/leaflet.js"></script>
 
 		<!--you can also place internal styles here; you would place these within <style> tags-->
     </head>
 
     <body>
         <!--put your initial page content here-->
-		<div id="div1">
-		</div>
-		<div id="mapdiv">
-			
-		</div>
-		
+        		<div id="div1">
+
+                  <p>Q.2 An empty variable is created. At first, the dots were blue. Because of the funciton 'generate circle' the dots changed to white circle with black contour. </p>
+                  <p>Q.3 Canadian Postal code: H3B 4G1, which is in Montreal</p>
+                  <p>Q.4 Feature refers to each train stations whereas layer is about the styling of the map which the feature is shown. </p>
+                  <p>Q.5 The fundamental difference between layer.options.fill and layer.getLatLng() is that 'layer.options.fill' is a Boolean and 'layer.getLatLng()' is an object. </p>
+                  <p>Q.6 Now the placemarkers on the map have become HUGE black cricle, making to map not readable at all. </p>
+                  <p></p>
+        		</div>
+
+        		<div id="mapdiv">
+            </div>
+
+            <select class="li-nav" name="mapdropdown" id="mapdropdown" onChange="loadMap(this.value);">
+
+                			<option value="map0" selected="selected" disabled>Load a map</option>
+                			<option value='mapa'>Map A - Train Stations</option>
+                			<option value='mapb'>Map B - Mega Cities</option>
+
+        	  </select>
+
         <!--you can also use this space for internal scripts; you would place these within <script> tags-->
 
-        
-		
+
+
 		<!--put your external script links here-->
-        <script type="text/javascript" src="js/main.js"></script>
+            <script type="text/javascript" src="js/main.js"></script>
+
     </body>
+
 </html>
